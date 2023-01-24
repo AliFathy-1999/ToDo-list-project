@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./images/noteicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO list</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="main-div">
+        <div id="list-style">
+            <h1 id="project-title"><i class="fa-solid fa-list"></i> ToDo List</h1>
+            <section id="input-field-style">
+                <input type="text" id="tasksInput" placeholder="Add new Task" minlength="5" maxlength="80">
+                <button id="save-task-btn" type="submit"><i class="fa-solid fa-check"></i></button>
+            </section>
+            <section id="tasks-style">
+                <h2 style="color: #0275d8;"><i class="fa-solid fa-list-check"></i> Tasks to do:</h2>
+                <h3 style='color:#d9534f;text-align: center;' id="taskStatus"></h3>
+                <ul id="ul-tasks">
+
+                </ul>
+                <hr>
+                <h2 id="completed"><i class="fa-sharp fa-solid fa-square-check"></i> Completed Tasks:</h2>
+                <h3 style='color:#d9534f;text-align: center;' id="taskCompStatus"></h3>
+                <ul id="completed-ul-tasks">
+                    
+                </ul>
+        </div>
+            </section>
+        </div>
+    </div>
+    <script src="./js/todo-list.js"></script>
+</body>
+</html>
